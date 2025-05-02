@@ -19,7 +19,7 @@ Monitor your node's real-time activity:
 cd aztec-node
 ```
 ```bash
-docker-compose logs -f
+docker-compose logs --tail=0 -f
 ```
 
 ### 📊 Check Current Block Height
@@ -43,6 +43,47 @@ http://localhost:8083 | jq -r ".result"
 `["BLOCK NUMBER","BLOCK NUMBER"]` Replace with block number 
 
 > **Note:** If proof output doesn't appear immediately, please wait 5-10 minutes as your node is initializing. For block reference, use the values specified in the Discord channel.
+
+## 🔄 Update Instructions
+
+When a new version is released, follow these steps to update your node:
+
+1. Edit your `docker-compose.yml` file:
+
+```bash
+nano docker-compose.yml
+```
+
+2. Replace this line:
+
+```yaml
+image: aztecprotocol/aztec:0.85.0-alpha-testnet.5
+```
+
+With:
+
+```yaml
+image: aztecprotocol/aztec:alpha-testnet
+```
+
+3. Save and exit (`Ctrl+O`, then `Enter`, then `Ctrl+X`)
+
+4. Update the image and restart your node:
+
+```bash
+docker-compose down
+docker-compose pull
+docker-compose --env-file .env up -d
+```
+
+### Optional: Update the Aztec CLI
+
+If you're using the CLI and not just Docker Compose:
+
+```bash
+aztec-up alpha-testnet
+```
+
 
 ## 🏆 Claim Your Operator Role
 
