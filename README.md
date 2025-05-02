@@ -32,7 +32,7 @@ http://localhost:8083 | jq -r ".result.proven.number"
 ```
 
 ### 🔐 Generate Proof for Validation
-Create cryptographic proof of your node's operation:
+proof of your node's:
 
 ```bash
 curl -s -X POST -H 'Content-Type: application/json' \
