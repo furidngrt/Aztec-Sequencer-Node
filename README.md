@@ -68,7 +68,7 @@ image: aztecprotocol/aztec:alpha-testnet
 
 3. Save and exit (`Ctrl+O`, then `Enter`, then `Ctrl+X`)
 
-4. Update the image and restart your node:
+4. restart your node:
 
 ```bash
 docker-compose down
