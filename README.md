@@ -16,6 +16,9 @@ bash <(curl -s https://raw.githubusercontent.com/furidngrt/Aztec-Sequencer-Node/
 Monitor your node's real-time activity with beautiful, detailed output:
 
 ```bash
+cd aztec-node
+```
+```bash
 docker-compose logs -f
 ```
 
