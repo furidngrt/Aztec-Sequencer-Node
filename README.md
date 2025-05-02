@@ -40,6 +40,8 @@ curl -s -X POST -H 'Content-Type: application/json' \
 http://localhost:8083 | jq -r ".result"
 ```
 
+`["BLOCK NUMBER","BLOCK NUMBER"]` Replace with block number 
+
 > **Note:** If proof output doesn't appear immediately, please wait 5-10 minutes as your node is initializing. For block reference, use the values specified in the Discord channel.
 
 ## 🏆 Claim Your Operator Role
