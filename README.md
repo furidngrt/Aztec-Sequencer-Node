@@ -13,7 +13,7 @@ bash <(curl -s https://raw.githubusercontent.com/furidngrt/Aztec-Sequencer-Node/
 ## 🔍 Node Monitoring Commands
 
 ### Watch Live Node Logs
-Monitor your node's real-time activity with beautiful, detailed output:
+Monitor your node's real-time activity:
 
 ```bash
 cd aztec-node
