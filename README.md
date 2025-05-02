@@ -84,6 +84,12 @@ If you're using the CLI and not just Docker Compose:
 aztec-up alpha-testnet
 ```
 
+```
+docker-compose down
+docker-compose pull
+docker-compose --env-file .env up -d
+```
+
 ### Register Validator
 
 ```
@@ -113,4 +119,5 @@ address : 0x123...abc
 block   : 20473
 proof   : AAAX...XXX=
 ```
+
 
