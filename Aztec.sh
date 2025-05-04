@@ -159,7 +159,7 @@ cat > docker-compose.yml <<EOF
 version: "3.8"
 services:
   node:
-    image: aztecprotocol/aztec:0.85.0-alpha-testnet.5
+    image: aztecprotocol/alpha-testnet
     ports:
       - "8083:8080"
     environment:
